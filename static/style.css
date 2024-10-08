@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: wheat;
+  text-align: center;
+  font-family: sans-serif;
+  align-items:  auto;
+}
+
+p {
+  font-size: 10lvh;
+}
+
+.button-div {
+  position: relative;
+  width: 10lvw;
+  height: 10lvh;
+  background-color: wheat;
+  color: black;
+}
