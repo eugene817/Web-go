@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .title }}</title>
-    <link href="static/style.css" rel="stylesheet">
+    <link href="/static/style.css" type="text/css" rel="stylesheet">
+    <style>
+    .button-container {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-container a {
+      text-decoration: none;
+      background-color: #f5e1c0;
+      color: #2c3e50;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .button-container a:hover {
+      background-color: #d1b899;
+      color: #1a252f;
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    </style>
   </head>
   <body>
-    <p> {{ .message }} </p>
-    <div class="button-div">
+    <h1> {{ .message }} </h1>
+    <div class="button-container">
       <a href="/users">Users</a>  
     </div>
   </body>
